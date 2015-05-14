@@ -1,0 +1,90 @@
+/* 全屏自适应布局  */
+html,body{width:100%;height:100%;overflow:hidden;margin:0;
+    font-family: "Microsoft YaHei" ! important;}
+html{_height:auto;_padding:60px 0 0px;}
+.g-hd,.g-sd,.g-mn,.g-ft{position:absolute;left:0;}
+.g-hd,.g-ft{width:100%;}
+.g-sd,.g-mn{top:60px;bottom:0px;_height:100%;overflow:auto;}
+.g-hd{top:0;height:60px;
+    background: #468ccb;
+    position: relative;
+    color: #fff;}
+.g-sd{width:200px;
+    background: #fff;}
+.g-mn{_position:relative;left:200px;right:0;_top:0;_left:0;_margin-left:200px;
+    background: #eeeeee;
+    padding: 10px;}
+.logo-title{
+    display: inline-block;
+    margin-left: 10px;}
+#logo{
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 60px;}
+#logo .glyphicon{
+    font-size: 30px;
+    top: 8px;}
+#nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;   }
+
+#nav a{
+    text-align: center;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #3a77ae;
+    color: #fff;
+    display: inline-block;}
+#nav a:hover{
+    background-color: #365f84;}
+#nav a span{
+    font-size: 24px;
+    padding-top: 8px;}
+
+/*左边公共菜单列表*/
+.c-list{
+    padding: 0;
+
+    margin: 0;}
+.c-list li{list-style: none;text-align: left;
+    display: block;}
+.c-list li a{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    color: #666;}
+.c-list li a:hover{
+    background: #f1f1f1;}
+.c-list li .glyphicon{
+    margin-right: 10px;}
+.c-list li a .glyphicon{
+    color: #aaa;}
+.c-list li a .c-list-title{
+    display: inline-block;
+   }
+
+.c-list  .c-list-fd{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    background-color: #f8f8f8;}
+.f-pr{
+    position: relative;}
+.c-box{
+    background-color: #fff;
+    padding: 10px;}
+.c-box .glyphicon{
+    color: #aaa;}
+.c-back{
+    position: absolute;
+    right: 15px;
+    top:13px;}
+.f-mt10{
+    margin-top: 10px;}

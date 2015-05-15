@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>管理登录</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <style>html,body{background: #f1f1f1;}</style>
+</head>
+<body>
+<div class="login">
+    <h1>问卷投票管理系统</h1>
+    <form>
+        <div class="box">
+            <div class="user"><span class="glyphicon glyphicon-user"></span><input type="text" value="用户名" onfocus="if(this.value=='用户名'){this.value=''}" onblur="if(this.value==''){this.value='用户名'}"></div>
+            <div class="passwd"><span class="glyphicon glyphicon-lock"></span><input type="password" value="密码" onfocus="if(this.value=='密码'){this.value=''}" onblur="if(this.value==''){this.value='密码'}"></div>
+        </div>
+        <input type="submit" class="submit" value="提   交">
+    </form>
+    <p>忘记密码?请联系平台管理员</p>
+</div>
+</body>
+</html>

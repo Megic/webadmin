@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>管理后台</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css"/>
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/avalon/avalon.min.js"></script>
+    <script>
+        var app=avalon.define({
+            $id:'app',
+            $HOST:'./',//模板文件夹父栏目地址
+            $TOP:'tpl/top.html',
+            $MENU:'tpl/menu.html',
+            modelSrc:""
+        });
+    </script>
+    <!--页面不同-->
+
+</head>
+<body ms-controller="app">
+<!--头部开始-->
+<div class="g-hd" ms-include-src="$HOST+$TOP"></div>
+<!--左边导航-->
+<div class="g-sd" ms-include-src="$HOST+$MENU"></div>
+<!--主体内容-->
+<div class="g-mn" >
+    <div class="c-box f-pr"><h4><span class="glyphicon glyphicon-chevron-right"></span>新增调查用户组<small>&nbsp;</small></h4>
+       <span class="c-right">
+                  <a href="javascript:history.go(-1);" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left"></span>返回</a>
+       </span>
+    </div>
+    <div class="c-box f-mt10">
+        <form>
+            <div class="form-group">
+                <label >名称</label>
+                <input type="text" class="form-control" placeholder="输入名称">
+            </div>
+            <div class="form-group">
+                <label>备注</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="f-mt10"><button type="submit" class="btn btn-primary">提交</button></div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

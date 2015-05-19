@@ -67,13 +67,16 @@ html{_height:auto;_padding:60px 0 0px;}
 .c-list li a .c-list-title{
     display: inline-block;
    }
-
+.c-list ul{
+    margin-left: 0;
+    padding-left: 0;}
 .c-list  .c-list-fd{
     display: block;
     border-bottom: 1px solid #ccc;
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
     color: #666;
     background-color: #f8f8f8;}
 .f-pr{
@@ -159,3 +162,25 @@ iframe{
     overflow-x: scroll;}
 #modelFr{
     height: 400px;}
+
+/*分页*/
+.pagination-tr{
+    color: #666; line-height: 30px;
+    height: 30px;}
+.pagination-tr a,.pagination-tr b{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    padding-right: 10px; line-height: 28px;
+    height: 30px;
+    text-decoration: none;
+    margin-right: 2px;
+    margin-left: 2px;border-radius: 3px;
+}
+.pagination-tr b{
+    background-color: #468ccb;
+    color: #fff;
+    border-color: #fff;}
+.pagination-tr a:hover{
+    background-color: #fff;
+   }
